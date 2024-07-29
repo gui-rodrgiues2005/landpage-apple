@@ -1,0 +1,101 @@
+@media(max-width: 768px) {
+    header {
+        display: none;
+    }
+
+    .navegacao-mobile {
+        display: block;
+        position: fixed;
+        left: 59%;
+        top: 10%;
+
+        #mobile-nav {
+            display: none;
+            opacity: 0;
+            transform: translateY(-20px);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+
+        }
+        #mobile-nav.show {
+            display: block;
+            text-align: center;
+            background: linear-gradient(to right, #CA7CC2, #3B0A65);
+            border-radius: 10px;
+            width: 150px;
+            height: auto;
+            opacity: 1;
+            transform: translateY(0);
+
+            a {
+                display: flex;
+                color: #FFFFFF;
+                text-decoration: none;
+                margin-bottom: 10px;
+                font-size: 20px;
+                padding: 5px;
+   
+                flex-direction: column;
+            }
+        }
+    }
+
+    .menu img {
+        width: 35px;
+        height: 35px;
+        margin-left: 109px;
+        margin-top: 10px;
+    }
+
+    .container {
+        height: auto;
+    }
+    
+    .home {
+        display: flex;
+        flex-direction: column;
+        margin-top: -150px;
+        text-align: center;
+    
+    
+        .ilustracao img {
+            width: 300px;
+        }
+    
+        .complementos {
+            margin-top: -150px;
+    
+            h1 {
+                font-size: 35px;
+            }
+    
+            h2 {
+                font-size: 25px;
+                margin-top: -25px;
+            }
+    
+            .dados {
+    
+                .iten {
+                    width: 60px;
+                    height: 60px;
+                    gap: 10px;
+    
+                    p {
+                        font-size: 20px;
+                    }
+    
+                    .text {
+                        font-size: 10px;
+                    }
+                }
+            }
+    
+            .buttons {
+                padding: 10px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    
+}
+

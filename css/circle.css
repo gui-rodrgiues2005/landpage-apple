@@ -1,0 +1,65 @@
+.efeitos {
+    .circle1 {
+        width: 75px;
+        height: 75px;
+        background: linear-gradient(#CA7CC2,#8F31A0,#3B0A65,#150C2D);
+        border-radius: 100%;
+        box-shadow: 0 50px 100px 0 rgb(0, 0, 0);
+        box-shadow: inset 0 14px 4px rgba(0, 0, 0, 0);
+        overflow: hidden;
+        filter: blur(5px);
+        perspective: 1000px;
+        transform: rotate(20deg);
+        position: relative;
+        left: -40px;
+        top: 660px;
+    }
+
+    .circle2 {
+        width: 50px;
+        height: 50px;
+        background: linear-gradient(#CA7CC2,#8F31A0,#3B0A65,#150C2D);
+        border-radius: 100%;
+        box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0);
+        box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0);
+        overflow: hidden;
+        filter: blur(5px);
+        perspective: 1000px;
+        transform: rotate(20deg);
+        position: relative;
+        left: 200px;
+        top: 770px;
+    }
+
+    .circle3 {
+        width: 40px;
+        height: 40px;
+        background: linear-gradient(#CA7CC2,#8F31A0,#3B0A65,#150C2D);
+        border-radius: 100%;
+        box-shadow: 0 14px 10px 0 rgb(0, 0, 0);
+        box-shadow: inset 0 14px 10px rgba(0, 0, 0, 0);
+        overflow: hidden;
+        filter: blur(5px);
+        perspective: 1000px;
+        transform: rotate(20deg);
+        position: relative;
+        left: 500px;
+        top: 410px;
+    }
+
+    .circle4 {
+        width: 20px;
+        height: 20px;
+        background: linear-gradient(#CA7CC2,#8F31A0,#3B0A65,#150C2D);
+        border-radius: 100%;
+        box-shadow: 0 14px 10px 0 rgb(0, 0, 0);
+        box-shadow: inset 0 14px 4px rgba(0, 0, 0, 0.059);
+        overflow: hidden;
+        filter: blur(5px);
+        perspective: 1000px;
+        transform: rotate(20deg);
+        position: relative;
+        left: 560px;
+        top: 460px;
+    }
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/Apple TV.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/section.css">
+    <link rel="stylesheet" href="css/circle.css">
+    <link rel="stylesheet" href="css/navegacao-mobile.css">
+
+    <title>Apple Landpage</title>
+</head>
+
+<body>
+    <section class="container">
+        <div class="efeitos">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
+            <div class="circle4"></div>
+
+        </div>
+        <header>
+            <nav>
+                <img src="imagens/Apple Logo.png" alt="icon-apple">
+                <a href="#">Home</a>
+                <a href="#">Mac</a>
+                <a href="#">Ipad</a>
+                <a href="#">Iphone</a>
+                <a href="#">Air-pods</a>
+                <a href="#">Store</a>
+                <a href="#">About</a>
+                <img src="imagens/Shopping Bag.png" alt="Loja">
+                <img src="imagens/Search.png" alt="pesquisar">
+            </nav>
+        </header>
+
+        <div class="navegacao-mobile">
+            <div class="menu">
+                <img src="imagens/Menu (2).png" id="menu-icon">
+            </div>
+            <nav id="mobile-nav">
+                <a href="#">Home</a>
+                <a href="#">Mac</a>
+                <a href="#">Ipad</a>
+                <a href="#">Iphone</a>
+                <a href="#">Air-pods</a>
+                <a href="#">Store</a>
+                <a href="#">About</a>
+            </nav>
+        </div>
+
+        <section class="home">
+            <div class="ilustracao">
+                <img src="imagens/14 PRO MAX-PhotoRoom 1.png" alt="ilustração">
+            </div>
+
+            <div class="complementos">
+                <h1>Iphone 14 Pro <span class="max">Max</span></h1>
+                <h2>$ 999 <span class="preco">From $999 or $41.62/mo. for 24 mo.</span></h2>
+
+                <div class="dados">
+                    <div class="iten">
+                        <p>A16</p>
+                        <p class="text">Bionic chip</p>
+                    </div>
+
+
+                    <div class="iten">
+                        <p>5G</p>
+                        <p class="text">Superfast 5G cellular</p>
+                    </div>
+
+
+                    <div class="iten">
+                        <img src="imagens/face.png" alt="face">
+                        <p class="text">Face ID</p>
+
+                    </div>
+
+                    <div class="iten">
+                        <img src="imagens/bateria.png" class="bateria" alt="bateria">
+                        <p class="text">Up to 29 hoursvideo playback</p>
+                    </div>
+
+                </div>
+
+                <div class="buttons">
+                    <button class="buy">Buy now</button>
+                    <button class="store">To the store</button>
+                </div>
+            </div>
+        </section>
+    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuIcon = document.getElementById("menu-icon");
+            const mobileNav = document.getElementById("mobile-nav");
+
+            menuIcon.addEventListener("click", function () {
+                if (mobileNav.classList.contains("show")) {
+                    mobileNav.classList.remove("show");
+                    setTimeout(() => {
+                        mobileNav.style.display = "none";
+                    }, 300); 
+                } else {
+                    mobileNav.style.display = "block";
+                    setTimeout(() => {
+                        mobileNav.classList.add("show");
+                    }, 10); 
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>

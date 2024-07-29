@@ -1,0 +1,114 @@
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+    gap: 100px;
+    .complementos {
+        h1 {
+            color: #FFF;
+            font-size: 50px;
+            font-weight: 400;
+
+            .max {
+                background: linear-gradient(to bottom, #CA7CC2, #8F31A0, #8F31A0, #150C2D);
+                -webkit-background-clip: text;
+                color: transparent;
+            }
+        }
+
+        h2 {
+            color: #FFF;
+            font-size: 40px;
+            font-weight: 400;
+
+            .preco {
+                color: #FFF;
+                opacity: 0.5;
+                font-size: 20px;
+                font-weight: 400;
+            }
+        }
+
+        .dados {
+            display: flex;
+            gap: 30px;
+
+            .iten {
+                width: 75px;
+                height: 75px;
+                background-color: transparent;
+                border: solid 2px #ffffff8c;
+                border-radius: 10px;
+                display: flex;
+                position: relative;
+                align-items: center;
+                justify-content: center;
+
+                p {
+                    color: #FFF;
+                    font-size: 30px;
+                }
+
+                .text {
+                    position:absolute;
+                    font-size: 15px;
+                    top: 65px;
+                    text-align: center;
+                }
+
+                img {
+                    width: 35px;
+                    height: 35px;
+                    display: flex;
+                }
+
+                .bateria {
+                    width: 33px;
+                    height: 25px;
+                }
+            }
+        }
+
+        .buttons {
+            display: flex;
+            gap: 50px;
+            margin-top: 100px;
+
+            .buy {
+                background-color: #FFF;
+                border: none;
+                border-radius: 40px;
+                color: #000000;
+                padding: 15px;
+                width: 150px;
+                font-weight: Bold;
+                transition:  background-color 0.5s ease-in-out, transform 0.2s ease;
+            }
+
+            .store {
+                background-color: transparent;
+                color: #FFF;
+                width: 150px;
+                border: solid 2px #FFFF;
+                font-weight: 100;
+                font-weight: Bold;
+                border-radius: 40px;
+                padding: 14px;
+                transition:  background-color 0.3s ease-in-out, transform 0.2s ease;
+            }
+
+            .buy:hover {
+                background: linear-gradient(to right, #CA7CC2, #3B0A65);
+                transform:scale(1.09);
+                cursor: pointer;
+            }
+
+            .store:hover{
+                background-color: #ffffff83;
+                transform:scale(1.09);
+                cursor: pointer;
+            }
+        }
+    }
+}
